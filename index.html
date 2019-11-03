@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="background">
+<div class="nav">
+  <a class="a active" href="#">HOME</a>
+  <a class="b" href="#">ABOUT ME</a>
+  <a class="c" href="#">PROJECTS</a>
+  <a class="d" href="#">BLOG POSTS</a>
+  <a class="e" href="#">CONTACT</a>
+</div>
+
+<div class="content">
+  <div class="home">
+    <h1>Abhilash Portfolio</h1>
+    <h3>DevOps Engineer | Solutions Architect</h3>
+  </div>
+
+  <div class="aboutme">
+    <p1 style="font-size:50px;">Hello!<br></p1>
+    <p2><b> My name is Abhilash,</b> <br>
+                    I am a <b>DevOps Engineer</b> from California and originally from India.<br>
+                    I have been in the industry for nearly 9 years, and have been loving every minute of it.
+                    In my spare time i love spending time on exploring and learning new things whether it may
+                    be a new technology or place or new idea that popped in my brain
+                    and if i am not doing any of these then i am probably spending time with my family or watching Netflix!&#128512;</p>
+  </div>
+  <div class="projects">
+    <h1 style="font-size:20px;"><b>DevOps Engineer</b><br></h1>
+    <p>Version Control System | Build/Deployment | Architect/Design<br>
+        Automation | Cloud Computing | SDLC | Process Optimization<br>
+        Agile | Microservices | Middleware | Java | .Net<br></p>
+    <h1 style="font-size:20px;"><b>Senior System Software Specialist</b><br></h1>
+    <p>Version Control System | Architect/Design | Cloud Computing<br>
+       Automation | Waterfall | SDLC | Process Optimization<br>
+       Agile | Microservices | Middleware | Java | .Net <br></p>
+    <h1 style="font-size:20px;"><b>System Software Specialist</b><br></h1>
+    <p>Version Control System | Build/Deployment | Middleware<br>
+       Automation | SDLC | Process Optimization<br>
+       Java | .Net<br></p>
+  </div>
+  <div class="blogposts">
+    <h1><b>****Under construction****</b><br></h1>
+
+  </div>
+  <div class="contact">
+    <h1 style="font-size:40px;"><b>Let's connect!</b><br></h1>
+        <h2 style="font-size:20px;"><b>Email: rabhilash.devops@gmail.com<b/><br>
+          <b>Phone: 731-217-9142<b/><br>
+        </h2>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div class="wrapper">
+         <a target="_blank" href="https://www.linkedin.com/in/ramagiriabhilash/"><i class="fa fa-3x fa-linkedin"></i></a>
+         <a target="_blank" href="https://github.com/iabhee"><i class="fa fa-3x fa-github"></i>
+      </div></a>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $('a').click(function(){
+        var selected = $(this);
+        $('a').removeClass('active');
+        $(selected).addClass('active');
+    });
+    var $a = $('.a'),
+    $b = $('.b'),
+    $c = $('.c'),
+    $d = $('.d'),
+    $e = $('.e'),
+    $home = $('.home'),
+    $aboutme = $('.aboutme');
+    $projects = $('.projects'),
+    $blogposts = $('.blogposts');
+    $contact = $('.contact');
+
+    $a.click(function(){
+      $home.fadeIn();
+      $aboutme.fadeOut();
+      $projects.fadeOut();
+      $blogposts.fadeOut();
+      $contact.fadeOut();
+    });
+    $b.click(function(){
+      $aboutme.fadeIn();
+      $home.fadeOut();
+      $projects.fadeOut();
+      $blogposts.fadeOut();
+      $contact.fadeOut();
+    });
+    $c.click(function(){
+      $projects.fadeIn();
+      $home.fadeOut();
+      $aboutme.fadeOut();
+      $blogposts.fadeOut();
+      $contact.fadeOut();
+    });
+    $d.click(function(){
+      $blogposts.fadeIn();
+      $projects.fadeOut();
+      $aboutme.fadeOut();
+      $home.fadeOut();
+      $contact.fadeOut();
+    });
+    $e.click(function(){
+      $contact.fadeIn();
+      $blogposts.fadeOut();
+      $projects.fadeOut();
+      $aboutme.fadeOut();
+      $home.fadeOut();
+    });
+  });
+
+</script>
+</body>
+</html>
