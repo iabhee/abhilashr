@@ -87,14 +87,14 @@ a.active, .nav a:hover{
 }
 
 .home h1{
-  font-size: 5vw;
+  font-size: 4vw;
   padding-right: 90px;
   border-top: 1px solid white;
   text-transform: uppercase;
 
 }
 .home h3{
-  font-size: 3vw;
+  font-size: 2vw;
   padding: 5px 0;
   opacity: 0.6;
   border-bottom: 1px solid white;
