@@ -80,7 +80,7 @@ a.active, .nav a:hover{
 .home{
   position: absolute;
   right: 0;
-  bottom: -50px;
+  bottom: -20px;
   color: white;
   font-family: 'Six Caps', sans-serif;
   float: none;
@@ -98,6 +98,8 @@ a.active, .nav a:hover{
   font-size: 3vw;
   padding: 5px 0;
   opacity: 0.6;
+  border-bottom: 1px solid white;
+
 }
 .aboutme{
   position: absolute;
