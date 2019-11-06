@@ -80,7 +80,7 @@ a.active, .nav a:hover{
 .home{
   position: absolute;
   right: 0;
-  bottom: -100px;
+  bottom: -50px;
   color: white;
   font-family: 'Six Caps', sans-serif;
   float: none;
@@ -89,6 +89,7 @@ a.active, .nav a:hover{
 .home h1{
   font-size: 5vw;
   padding-right: 90px;
+  border-top: 1px solid white;
   border-bottom: 1px solid white;
   text-transform: uppercase;
 
